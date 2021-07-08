@@ -1,0 +1,39 @@
+html,
+body,
+header,
+.intro-section {
+  height: 100%;
+}
+
+@media (min-width: 560px) and (max-width: 740px) {
+  html,
+  body,
+  header,
+
+  .intro-section {
+    height: 470px;
+  }
+
+}
+
+.divider {
+  border-bottom: 1px solid #FFF;
+  background-color: #DADADA;
+  height: 1px;
+  margin: 0.5em 0px 1.5em;
+}
+
+.divider span {
+  display: block;
+  width: 55px;
+  height: 2px;
+  background-color: #56D6FF;
+}
+
+.info-section {
+  font-size: 13px;
+}
+
+.copyright {
+  font-size: 11px;
+}
