@@ -5,30 +5,30 @@ header,
   height: 100%;
 }
 
-@media (min-width: 560px) and (max-width: 740px) {
-  html,
-  body,
-  header,
-
-  .intro-section {
-    height: 470px;
-  }
-
-}
-
 @font-face {
   font-family: "RoamB";
   src: url("../font/roam-bold/RoamB.ttf") format("truetype"); 
   font-style: normal; 
   font-weight: normal; 
-  } 
+} 
+
+@media (min-width: 560px) and (max-width: 740px) {
+  html,
+  body,
+  header,
+  
+  .intro-section {
+    height: 470px;
+  }
+  
+}
 
 .intro-text {
   font-family: "RoamB";
 }
 
 .intro-header {
-  font-size: 6em !important;
+  font-size: 6em;
   opacity: .5;
   color: #ffc107;
 }
@@ -50,7 +50,7 @@ header,
 }
 
 a.effect-underline:after {
-	content: '';
+  content: '';
   position: absolute;
   left: 0;
   display: inline-block;
@@ -60,16 +60,16 @@ a.effect-underline:after {
   border-color: #ffc107;
   margin-top: 10px;
   opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: scale(0,1);
-	transform: scale(0,1);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  transform: scale(0,1);
 }
 
 a.effect-underline:hover:after {
   opacity: 1;
-	-webkit-transform: scale(1);
-	transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
 
 .divider {
