@@ -22,32 +22,32 @@
 
 <body>
   <header>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light scrolling-navbar white">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light scrolling-navbar white shadow-custom">
       <div class="container-fluid justify-content-center align-items-center">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
         aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent-4">
+      
+      <div class="collapse navbar-collapse justify-content-center smooth-scroll" id="navbarSupportedContent-4">
         <ul class="navbar-nav">
           <a class="navbar-brand wow fadeInUp" data-wow-delay="0.1s" href="#">
             <img src="favicon_package/apple-touch-icon.png" height="35" loading="lazy" />
           </a>
           <li class="nav-item dropdown ml-4 mb-0">
-            <a class="nav-link waves-effect waves-light font-weight-bold wow fadeInUp" data-wow-delay="0.2s" href="#about"
+            <a class="nav-link waves-effect waves-light font-weight-bold wow fadeInUp effect-underline" data-wow-delay="0.2s" href="#about"
             data-offset="100">О нас</a>
           </li>
           <li class="nav-item dropdown ml-4  mb-0">
-            <a class="nav-link waves-effect waves-light font-weight-bold wow fadeInUp" data-wow-delay="0.3s" href="#"
+            <a class="nav-link waves-effect waves-light font-weight-bold wow fadeInUp effect-underline" data-wow-delay="0.3s" href="#types"
             data-offset="100">Виды работ</a>
           </li>
           <li class="nav-item dropdown ml-4  mb-0">
-            <a class="nav-link waves-effect waves-light font-weight-bold wow fadeInUp" data-wow-delay="0.4s" href="#"
+            <a class="nav-link waves-effect waves-light font-weight-bold wow fadeInUp effect-underline" data-wow-delay="0.4s" href="#partners"
             data-offset="100">Партнеры</a>
           </li>
           <li class="nav-item ml-4 mb-0">
-            <a class="nav-link waves-effect waves-light font-weight-bold wow fadeInUp" data-wow-delay="0.5s" href="#contacts"
+            <a class="nav-link waves-effect waves-light font-weight-bold wow fadeInUp effect-underline" data-wow-delay="0.5s" href="#contacts"
             data-offset="100">Контакты</a>
           </li>
         </li>
@@ -59,17 +59,19 @@
 <section class="view intro-section">
   
   <video class="video-intro" playsinline autoplay muted loop>
-    <source src="video/vid-1.mp4" type="video/mp4">
+    <source src="video/vid-2.mp4" type="video/mp4">
   </video>
-  <div class="mask">
-    <div class="container h-100 d-flex justify-content-center align-items-center">
+  <div class="mask" style="background-color: rgba(0, 0, 0, 0.4)">
+    <div class="container h-100 d-flex align-items-center">
       <div class="row pt-5 mt-3">
-        <div class="col-md-12 white-text text-center smooth-scroll">
-          <div class="white-text text-center wow fadeInUp">
-            <h3 class="display-3 font-weight-bold text-uppercase">LAN<strong>KIT</strong></h3>
-            <h5 class="font-weight-bold wow fadeIn" data-wow-delay="0.4s"><mark>Проектирование | Строительство | Эксплуатация</mark></h5>
-            <a class="btn btn-outline-white btn-rounded wow fadeInUp mt-5" data-wow-delay="0.5s" href="#about"
-            data-offset="100"><i class="fas fa-angle-down white-text" aria-hidden="true"></i></a>
+        <div class="col-md-12 white-text smooth-scroll">
+          
+          <div class="white-text text-left wow fadeInUp">
+            <h5 class="font-weight-bold wow fadeIn text-left intro-header" data-wow-delay="0.2s">Ланкит</h5>
+            <div class="divider"> <span></span></div>
+            <a class="font-weight-bold wow fadeIn intro-underline text-white" data-wow-delay="0.5s" href="#about">Проектирование</a>
+            <a class="font-weight-bold wow fadeIn intro-underline text-white" data-wow-delay="0.7s" href="#about">Строительство</a>
+            <a class="font-weight-bold wow fadeIn intro-underline text-white" data-wow-delay="0.9s" href="#about">Эксплуатация</a>
           </div>
         </div>
       </div>
@@ -134,18 +136,18 @@
     </div>
   </div>
   
-  <div class="container-fluid mt-md-0 mt-5 mb-5">
+  <div class="container-fluid mt-md-0 mt-5 mb-5" id="types">
     <div class="row" style="margin-top: -50px;">
       <div class="col-md-12 px-lg-5">
         <div class="card pb-5 mx-md-3">
           <div class="card-body">
             <div class="container">
-              <h3 class="text-left text-uppercase font-weight-bold mb-3 mt-4 wow fadeIn" data-wow-delay="0.2s" id="about">Виды работ</h3>
+              <h3 class="text-left text-uppercase font-weight-bold mb-3 mt-4 wow fadeIn" data-wow-delay="0.2s">Виды работ</h3>
               <div class="divider"> <span></span></div>
               
               <div class="row pt-2 mt-5">
                 <div class="col-lg-5 col-md-12 mb-3 wow fadeIn" data-wow-delay="0.4s">
-                  <img src="img/pic-3.jpg" class="img-fluid z-depth-1 rounded" alt="vols">
+                  <img src="img/pic-3.jpg" class="img-fluid z-depth-1 rounded shadow-custom" alt="vols">
                 </div>
                 <div class="col-lg-6 ml-auto col-md-12 wow fadeIn" data-wow-delay="0.4s">
                   <h3 class="mb-4 dark-grey-text title font-weight-bold wow fadeIn" data-wow-delay="0.2s">
@@ -194,13 +196,13 @@
                   </li> 
                 </div>
                 <div class="col-lg-5 col-md-12 mb-3 wow fadeIn" data-wow-delay="0.4s">
-                  <img src="img/pic-4.jpg" class="img-fluid z-depth-1 rounded" alt="twisted-pair">
+                  <img src="img/pic-4.jpg" class="img-fluid z-depth-1 rounded shadow-custom" alt="twisted-pair">
                 </div>
               </div>
               
               <div class="row pt-2 mt-5">
                 <div class="col-lg-5 col-md-12 mb-3 wow fadeIn" data-wow-delay="0.4s">
-                  <img src="img/pic-5.jpg" class="img-fluid z-depth-1 rounded" alt="power-lines">
+                  <img src="img/pic-5.jpg" class="img-fluid z-depth-1 rounded shadow-custom" alt="power-lines">
                 </div>
                 <div class="col-lg-6 ml-auto col-md-12 wow fadeIn" data-wow-delay="0.4s">
                   <h3 class="mb-4 dark-grey-text title font-weight-bold wow fadeIn" data-wow-delay="0.2s">
@@ -254,13 +256,13 @@
                   </li> 
                 </div>
                 <div class="col-lg-5 col-md-12 mb-3 wow fadeIn" data-wow-delay="0.4s">
-                  <img src="img/pic-6.jpg" class="img-fluid z-depth-1 rounded" alt="twisted-pair">
+                  <img src="img/pic-6.jpg" class="img-fluid z-depth-1 rounded shadow-custom" alt="access-net">
                 </div>
               </div>
               
               <div class="row pt-2 mt-5">
                 <div class="col-lg-5 col-md-12 mb-3 wow fadeIn" data-wow-delay="0.4s">
-                  <img src="img/pic-7.jpg" class="img-fluid z-depth-1 rounded" alt="power-lines">
+                  <img src="img/pic-7.jpg" class="img-fluid z-depth-1 rounded shadow-custom" alt="magistral-net">
                 </div>
                 <div class="col-lg-6 ml-auto col-md-12 wow fadeIn" data-wow-delay="0.4s">
                   <h3 class="mb-4 dark-grey-text title font-weight-bold wow fadeIn" data-wow-delay="0.2s">
@@ -329,7 +331,7 @@
                   </li> 
                 </div>
                 <div class="col-lg-5 col-md-12 mb-3 wow fadeIn" data-wow-delay="0.4s">
-                  <img src="img/pic-8.jpg" class="img-fluid z-depth-1 rounded" alt="twisted-pair">
+                  <img src="img/pic-8.jpg" class="img-fluid z-depth-1 rounded shadow-custom" alt="it-outsource">
                 </div>
               </div>
             </div>
@@ -360,9 +362,9 @@
       </section>
     </div>
   </div>
-
+  
   <div class="container pt-5">
-    <h3 class="text-left text-uppercase font-weight-bold mb-3 mt-4 wow fadeIn" data-wow-delay="0.2s" id="confidence">Нам доверяют</h3>
+    <h3 class="text-left text-uppercase font-weight-bold mb-3 mt-4 wow fadeIn" data-wow-delay="0.2s" id="partners">Нам доверяют</h3>
     <div class="divider"> <span></span></div>
   </div>
   
@@ -387,7 +389,7 @@
       </div>
     </div>
   </div>
-
+  
   <div class="container pt-5">
     <h3 class="text-left text-uppercase font-weight-bold mb-3 mt-4 wow fadeIn" data-wow-delay="0.2s" id="letters">Благодарственные письма</h3>
     <div class="divider"> <span></span></div>
