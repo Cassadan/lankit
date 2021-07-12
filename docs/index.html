@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/mdb.min.css" >
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/lightbox.min.css" />
   
   <link rel="apple-touch-icon" sizes="180x180" href="favicon_package/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon_package/favicon-32x32.png">
@@ -360,6 +361,59 @@
           </div>
         </div>
       </section>
+      
+      <div class="container">
+        <section id="contact" class="text-center my-5">
+          
+          <p class="grey-text w-responsive mx-auto mb-5 wow fadeIn" data-wow-delay="0.2s">
+            Все оставшиеся вопросы можете задать через форму обратной связи. Наши менеджеры свяжутся с вами в ближайшее время.
+          </p>
+          
+          <div class="card row wow fadeIn d-flex align-items-center justify-content-center" data-wow-delay="0.4s">
+            <div class="col-8">
+              <form>
+                <div class="row mt-4">
+                  <div class="col-6">
+                    <div class="md-form mb-0">
+                      <input type="text" id="company-name" class="form-control">
+                      <label for="company-name" class="">Организация</label>
+                    </div>
+                  </div>
+                  
+                  <div class="col-6">
+                    <div class="md-form mb-0">
+                      <input type="text" id="contact-mail" class="form-control">
+                      <label for="contact-mail" class="">E-mail для связи</label>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-12">
+                    <div class="md-form mb-0">
+                      <input type="text" id="subject" class="form-control">
+                      <label for="subject" class="">Тема обращения</label>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-12">
+                    <div class="md-form mb-0">
+                      <textarea type="text" id="message" class="md-textarea form-control" rows="3"></textarea>
+                      <label for="message">Ваш запрос</label>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="text-center text-center mb-5 mt-4">
+                  <button type="button" class="btn btn-outline-info" data-mdb-ripple-color="dark">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
   </div>
   
@@ -391,9 +445,26 @@
     </div>
   </div>
   
-  <div class="container pt-5">
+  <div class="container pt-5 pb-5">
     <h3 class="text-left text-uppercase font-weight-bold mb-3 mt-4 wow fadeIn" data-wow-delay="0.2s" id="letters">Благодарственные письма</h3>
     <div class="divider"> <span></span></div>
+    
+    <section>
+      <div class="row wow fadeIn" data-wow-delay="0.4s">
+        <figure class="col-md-6 d-flex justify-content-center align-items-center">
+          <a href="img/gr-shvabe.jpg" data-lightbox="example-set">
+            <img src="img/gr-shvabe.jpg" class="img-thumbnail ">
+          </a>
+        </figure>
+        
+        <figure class="col-md-6 d-flex justify-content-center align-items-center">
+          <a href="img/gr-shvabe.jpg" data-lightbox="example-set">
+            <img src="img/gr-shvabe.jpg" class="img-thumbnail">
+          </a>
+        </figure>
+        
+      </div>
+    </section>
   </div>
 </div>
 </main>
@@ -427,8 +498,19 @@
 <script type="text/javascript" src="js/popper.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/mdb.min.js"></script>
+<script type="text/javascript" src="js/lightbox.min.js"></script>
 <script>
   new WOW().init();
+</script>
+<script>
+  lightbox.option({
+    'showImageNumberLabel': false,
+    'wrapAround': true,
+    'resizeDuration': 400,
+    'imageFadeDuration': 400,
+    'fitImagesInViewport': true,
+    'fadeDuration': 400
+  })
 </script>
 </body>
 </html>
