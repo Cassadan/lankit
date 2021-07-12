@@ -7,21 +7,37 @@ header,
 
 @font-face {
   font-family: "RoamB";
-  src: url("../font/roam-bold/RoamB.ttf") format("truetype"); 
-  font-style: normal; 
-  font-weight: normal; 
-} 
+  src: url("../font/roam-bold/RoamB.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
 
 @media (min-width: 560px) and (max-width: 740px) {
   html,
   body,
   header,
-  
+
   .intro-section {
     height: 470px;
   }
-  
+
 }
+
+@media (min-width: 320px) and (max-width: 560px) {
+  .intro-header {
+    font-size: 3em !important;
+  }
+
+  .intro-underline {
+    font-size: 2em !important;
+  }
+
+  .md-form label {
+    font-size: .7rem !important;
+  }
+
+}
+
 
 .intro-text {
   font-family: "RoamB";
@@ -41,12 +57,13 @@ header,
   background-position: 0 88%;
   transition: background-size 0.25s ease-in;
 }
+
 .intro-underline:hover {
   background-size: 100% 88%;
 }
 
 .navbar {
-  background-image:url('../img/texture.png') !important;
+  background-image: url('../img/texture.png') !important;
 }
 
 a.effect-underline:after {
@@ -62,8 +79,8 @@ a.effect-underline:after {
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: scale(0,1);
-  transform: scale(0,1);
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
 }
 
 a.effect-underline:hover:after {
