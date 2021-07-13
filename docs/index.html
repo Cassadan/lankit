@@ -24,7 +24,7 @@
 <body>
   <header>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light scrolling-navbar white shadow-custom">
-      <div class="container-fluid justify-content-center align-items-center">
+      <div class="container-fluid justify-content-left align-items-center">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
         aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -373,14 +373,14 @@
             <div class="col-8">
               <form>
                 <div class="row mt-4">
-                  <div class="col-6">
+                  <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                     <div class="md-form mb-0">
                       <input type="text" id="company-name" class="form-control">
                       <label for="company-name" class="">Организация</label>
                     </div>
                   </div>
                   
-                  <div class="col-6">
+                  <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                     <div class="md-form mb-0">
                       <input type="text" id="contact-mail" class="form-control">
                       <label for="contact-mail" class="">E-mail для связи</label>
@@ -407,7 +407,7 @@
                 </div>
                 
                 <div class="text-center text-center mb-5 mt-4">
-                  <button type="button" class="btn btn-outline-info" data-mdb-ripple-color="dark">Отправить</button>
+                  <button type="button" class="btn btn-outline-info" data-mdb-ripple-color="dark" onclick="toastr.info('Ваше сообщение отправлено!');">Отправить</button>
                 </div>
               </form>
             </div>
@@ -508,6 +508,7 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/mdb.min.js"></script>
 <script type="text/javascript" src="js/lightbox.min.js"></script>
+<script type="text/javascript" src="js/toastr.js"></script>
 <script>
   new WOW().init();
 </script>
