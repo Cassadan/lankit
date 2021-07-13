@@ -45,6 +45,7 @@
     {
         header("Content-Type: application/json;charset=utf-8");
         $res = (object)["success" => false];
+        echo json_encode($res);
         exit;
     }
 
