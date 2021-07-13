@@ -371,7 +371,7 @@
           
           <div class="card row wow fadeIn d-flex align-items-center justify-content-center" data-wow-delay="0.4s">
             <div class="col-8">
-              <form method="POST" action="/feedback.php">
+              <form id="feedbackForm" action="#">
                 <div class="row mt-4">
                   <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                     <div class="md-form mb-0">
@@ -408,7 +408,7 @@
                 </div>
                 
                 <div class="text-center text-center mb-5 mt-4">
-					<button type="button" class="btn btn-outline-info" data-mdb-ripple-color="dark" onclick="toastr.info('Ваше сообщение отправлено!');">Отправить</button>
+                  <button type="submit" class="btn btn-outline-info" data-mdb-ripple-color="dark">Отправить</button>
                 </div>
               </form>
             </div>
@@ -512,6 +512,25 @@
 <script type="text/javascript" src="js/toastr.js"></script>
 <script>
   new WOW().init();
+
+  $(function() {
+    var $feedbackForm = $("#feedbackForm");
+    $feedbackForm.submit(function (e) {
+      e.preventDefault();
+      $.post("/feedback.php", $(this).serialize())
+        .done(function(res) {
+          if (res.success) {
+            toastr.success('Ваше сообщение отправлено!');
+            $feedbackForm.find("input, textarea").val("").focusout();
+          } else {
+            toastr.error('Произошла ошибка! Попробуйте позднее.');
+          }
+        })
+        .fail(function() {
+          toastr.error('Произошла ошибка! Попробуйте позднее.');
+        });
+    });
+  });
 </script>
 <script>
   lightbox.option({
