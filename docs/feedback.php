@@ -25,7 +25,7 @@
         $mail->Port       = 465;
  
         $mail->setFrom("noreplay@lankit.ru", "Lankit");
-        $mail->addAddress(""); //TODO: set recipient email
+        $mail->addAddress("info@lankit.ru");
 
         $mail->isHTML(true);
         $mail->Subject = "Новая заявка с сайта lankit.ru";
