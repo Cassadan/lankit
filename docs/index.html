@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Ланкит- проектирование, строительство и эксплуатация</title>
+  <title>Ланкит - проектирование, строительство и эксплуатация</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/mdb.min.css" >
@@ -19,6 +19,12 @@
   <link rel="mask-icon" href="favicon_package/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lankit.ru">
+  <meta property="og:title" content="Ланкит - проектирование, строительство и эксплуатация">
+  <meta property="og:image" content="https://lankit.ru/img/pic-2.jpg">
+  <meta property="og:locale" content="ru_RU">
 </head>
 
 <body>
@@ -401,7 +407,7 @@
                   <div class="col-12">
                     <div class="md-form mb-0">
                       <textarea type="text" id="message" name="message" class="md-textarea form-control" 
-                        rows="3" required></textarea>
+                      rows="3" required></textarea>
                       <label for="message">Ваш запрос</label>
                     </div>
                   </div>
@@ -442,11 +448,11 @@
         <div class="col-2 d-flex align-items-center justify-content-center">
           <img src="img/ans-magistral-logo.png" class="img-fluid ">
         </div>
-
+        
         <div class="col-2 d-flex align-items-center justify-content-center">
           <img src="img/odk-umpo-logo.png" class="img-fluid ">
         </div>
-
+        
         <div class="col-2 d-flex align-items-center justify-content-center">
           <img src="img/sintroilcs-logo.png" class="img-fluid ">
         </div>
@@ -499,7 +505,7 @@
   
   <div class="footer-copyright py-3 text-center">
     <div class="container-fluid copyright">
-      © 2021 ООО "Ланкит"
+      © 2019 ООО "Ланкит"
     </div>
   </div>
 </footer>
@@ -512,23 +518,23 @@
 <script type="text/javascript" src="js/toastr.js"></script>
 <script>
   new WOW().init();
-
+  
   $(function() {
     var $feedbackForm = $("#feedbackForm");
     $feedbackForm.submit(function (e) {
       e.preventDefault();
       $.post("/feedback.php", $(this).serialize())
-        .done(function(res) {
-          if (res.success) {
-            toastr.success('Ваше сообщение отправлено!');
-            $feedbackForm.find("input, textarea").val("").focusout();
-          } else {
-            toastr.error('Произошла ошибка! Попробуйте позднее.');
-          }
-        })
-        .fail(function() {
+      .done(function(res) {
+        if (res.success) {
+          toastr.success('Ваше сообщение отправлено!');
+          $feedbackForm.find("input, textarea").val("").focusout();
+        } else {
           toastr.error('Произошла ошибка! Попробуйте позднее.');
-        });
+        }
+      })
+      .fail(function() {
+        toastr.error('Произошла ошибка! Попробуйте позднее.');
+      });
     });
   });
 </script>
