@@ -20,7 +20,6 @@ header,
   .intro-section {
     height: 470px;
   }
-
 }
 
 @media (min-width: 320px) and (max-width: 560px) {
@@ -35,9 +34,11 @@ header,
   .md-form label {
     font-size: .7rem !important;
   }
-
 }
 
+.streak {
+  height: auto !important;
+}
 
 .intro-text {
   font-family: "RoamB";
